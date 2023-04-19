@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" type="x-icon" href="../../../static/images/favicon.ico" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="../../static/css/samling_style.css" />
+        <title>SamIT</title>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class = "web-container">
+      <div class = "left-cont">
+        <div class = "logo">
+          <img src = "../../static/image/logosamit.svg">
+        </div>
+        <div class = "list-menu-container">
+          <div class = "menu">
+            <div class = "icon">
+              <img src = "../../static/image/icons/ic_dashboard.svg">
+            </div>
+            <div class = "menu-text">
+              <h3 class = "text-selected">Dashboard</h3>
+            </div>
+          </div>
+          <div class = "menu">
+            <div class = "icon">
+              <img src = "../../static/image/icons/ic_car.svg">
+            </div>
+            <div class = "menu-text">
+              <h3>Samsat</h3>
+            </div>
+          </div>
+          <div class = "menu">
+            <div class = "icon">
+              <img src = "../../static/image/icons/ic_pajak.svg">
+            </div>
+            <div class = "menu-text">
+              <h3>Info Pajak</h3>
+            </div>
+          </div>
+          <div class = "menu">
+            <div class = "icon">
+              <img src = "../../static/image/icons/ic_panduan.svg">
+            </div>
+            <div class = "menu-text">
+              <h3>Panduan</h3>
+            </div>
+          </div>
+          <div class = "menu">
+            <div class = "icon">
+              <img src = "../../static/image/icons/ic_pembayaran.svg">
+            </div>
+            <div class = "menu-text">
+              <h3>Pembayaran</h3>
+            </div>
+          </div>
+          <div class = "menu">
+            <div class = "icon">
+              <img src = "../../static/image/icons/ic_cc.svg">
+            </div>
+            <div class = "menu-text">
+              <h3>Customer Care</h3>
+            </div>
+          </div>
+          <div class = "menu">
+            <div class = "icon">
+              <img src = "../../static/image/icons/ic_settings.svg">
+            </div>
+            <div class = "menu-text">
+              <h3>Settings</h3>
+            </div>
+          </div>
+        </div>
+        <div class = "info">
+          <div class = "info-logo">
+            <img src = "../../static/image/icons/ic_green_shield.svg"> 
+          </div>
+          <p class = "info-text text-bold">Awasi pajak kendaraanmu!</p>
+          <p class = "info-text">Bayar pajak tidak perlu ribet ! Cukup klik dan beres</p>
+          <p class = "info-text text-bold">BAPENDA Jabar</p>
+        </div>
+      </div>
+
+      <div class = "right-cont">
+        <div class = "right-header-cont">
+          <div class = "back-button">
+            <img src = "../../static/image/icons/back.svg" onclick="location.href='/'">
+          </div>
+          <div class = "search-bar">
+            <div class = "search-icon">
+              <img src = "../../static/image/icons/search.svg">
+            </div>
+          </div>
+          <div class="profile-container">
+            <img src="../../static/image/icons/ic_notification.svg">
+            Aulia Fajri
+            <img src="../../static/image/foto/profile.svg" style="padding: 2px;">   
+          </div>
+        </div>
+
+        <div class = "right-body-cont">
+          <div class = "title-samsat-container" id="header3">
+            <h1><b>Samsat Keliling</b></h1>
+            <!-- <h3>Kota Bandung</h3> -->
+          </div>
+          <div class = "table-jadwal-container">
+
+            <table>
+              <thead>
+                <tr>
+                  <th style="color: #FFFF;">No</th>
+                  <th style="color: #FFFF;">Lokasi</th>
+                  <th style="color: #FFFF;">Alamat</th>
+                  <th style="color: #FFFF;">WaktuBuka</th>
+                  <th style="color: #FFFF;">WaktuTutup</th>
+                  <th style="color: #FFFF;">Hari</th>
+                </tr>
+              </thead>
+              <tbody id="data-table">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="../../static/js/samling.js">
+  </script>
+
+</html>
